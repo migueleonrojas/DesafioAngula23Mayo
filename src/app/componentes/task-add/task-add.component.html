@@ -1,0 +1,24 @@
+<div class="card" >
+    <div class="card-header">
+        Agrega el nuevo registro
+    </div>
+    <div class="card-body">
+        <form (submit) = "addRegistro()"> 
+            <div class="form-group">
+                <label for="name">Estudiante</label>
+                <input type="text" class="form-control" name="name" [(ngModel)] = "name">
+            </div>
+
+            <div class="form-group">
+                <label for="DateBirth">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" name="DateBirth" [(ngModel)] = "DateBirth">
+            </div>
+
+            <div class="form-group">
+                <label for="ancestry">Ascendencias</label>
+                <input type="text" class="form-control" name="ancestry" [(ngModel)] = "ancestry">
+            </div>
+            <input type="submit" value="Registrar estudiante" class=" btn btn-primarys">
+        </form>
+    </div>
+</div>
